@@ -32,12 +32,6 @@ export default function Preloader() {
     };
   }, [i])
 
-  useEffect(()=> {
-    document.documentElement.scrollTo({
-      top: 0,
-      behavior: 'smooth' 
-    });
-  },[])
 
   if(pathname !== '/') {
     return <></>
@@ -59,6 +53,13 @@ export default function Preloader() {
         dispatch(endPreloader())
       }}
 
+      onAnimationStart={()=> {
+        document.documentElement.scrollTo({
+          top: 0,
+          behavior: 'instant' 
+        });
+      }}
+
       className="h-[100dvh] w-full  text-white fixed inset-0 z-[100] font-clash loader">
 
       <motion.div
@@ -70,7 +71,6 @@ export default function Preloader() {
         initial='visible'
         animate='hidden'
         transition={{delay:5,duration:1.5}}
-
       />
 
       <motion.div 
