@@ -32,13 +32,13 @@ export default function Preloader() {
   }, [i])
 
   useEffect(() => {
+    // force the scroll to top 0 , even in refresh , duplicate
     setTimeout(() => {
-      console.log('loo')
       document.documentElement.scrollTo({
         top: 0,
         behavior: 'instant'
       });
-    }, 4000);
+    }, 4500);
 
   }, []);
 
