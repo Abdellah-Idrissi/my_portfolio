@@ -32,12 +32,15 @@ export default function Preloader() {
   }, [i])
 
   useEffect(() => {
-    setTimeout(() => {
-      document.documentElement.scrollTo({
-        top: 0,
-        behavior: 'instant'
-      });
-    }, 100);
+    // setTimeout(() => {
+    //   document.documentElement.scrollTo({
+    //     top: 0,
+    //     behavior: 'instant'
+    //   });
+    // }, 100);
+    window.addEventListener('load',()=> {
+      console.log('yoo')
+    })
   }, []);
 
 
