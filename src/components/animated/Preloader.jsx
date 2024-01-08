@@ -32,11 +32,21 @@ export default function Preloader() {
     };
   }, [i])
 
+  useEffect(() => {
+    setTimeout(() => {
+      document.documentElement.scrollTo({
+        top: 0,
+        behavior: 'instant'
+      });
+    }, 0);
+  }, []);
+  
 
   if(pathname !== '/') {
     return <></>
   }
 
+  
 
   
   return (
@@ -53,13 +63,13 @@ export default function Preloader() {
         dispatch(endPreloader())
       }}
 
-      onAnimationStart={()=> {
-        console.log('alo')
-        window.scrollTo({
-          top: 0,
-          behavior: 'instant' 
-        });
-      }}
+      // onAnimationStart={()=> {
+      //   console.log('called')
+      //   window.scrollTo({
+      //     top: 0,
+      //     behavior: 'instant' 
+      //   });
+      // }}
 
       className="h-[100dvh] w-full  text-white fixed inset-0 z-[100] font-clash loader">
 
