@@ -33,12 +33,9 @@ export default function Preloader() {
   }, [i])
 
   useEffect(() => {
-    setTimeout(() => {
-      document.documentElement.scrollTo({
-        top: 0,
-        behavior: 'instant'
-      });
-    }, 0);
+    document.querySelector('.logo').click()
+
+
   }, []);
   
 
