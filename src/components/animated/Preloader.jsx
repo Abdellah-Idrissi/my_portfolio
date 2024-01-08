@@ -54,7 +54,8 @@ export default function Preloader() {
       }}
 
       onAnimationStart={()=> {
-        document.documentElement.scrollTo({
+        console.log('alo')
+        window.scrollTo({
           top: 0,
           behavior: 'instant' 
         });
