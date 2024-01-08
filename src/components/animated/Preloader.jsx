@@ -1,7 +1,6 @@
 'use client'
 
 import { endPreloader } from "@/rtk/preloaderSlice";
-import { startScroll } from "@/rtk/scrollSlice";
 import { motion } from "framer-motion"
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
@@ -54,7 +53,6 @@ export default function Preloader() {
       }}
 
       onAnimationStart={()=> {
-        console.log('called')
         window.scrollTo({
           top: 0,
           behavior: 'instant' 
