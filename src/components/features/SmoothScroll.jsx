@@ -17,75 +17,74 @@ export default function SmoothScroll() {
 
 
   const pathname = usePathname()
-  const router = useRouter()
 
 
-  useLayoutEffect(() => {
+  // useLayoutEffect(() => {
 
-    const handleLogoClick = (e) => {
+  //   const handleLogoClick = (e) => {
 
-      e.preventDefault();
+  //     e.preventDefault();
 
-      lenisInstanceRef.current.scrollTo(0, {
-        duration: 1.2,
-        easing: (t) => Math.sin((t * Math.PI) / 2),
-      });
+  //     lenisInstanceRef.current.scrollTo(0, {
+  //       duration: 1.2,
+  //       easing: (t) => Math.sin((t * Math.PI) / 2),
+  //     });
 
-    }
+  //   }
 
-    const handleMenuLogoClick = (e) => {
+  //   const handleMenuLogoClick = (e) => {
 
-      e.preventDefault();
+  //     e.preventDefault();
 
-        window.scrollTo({top:0,behavior:'instant'})
+  //       window.scrollTo({top:0,behavior:'instant'})
 
-    }
+  //   }
 
-    if(startScroll) {
+  //   if(startScroll) {
   
-      if (!lenisInstanceRef.current) {
-        lenisInstanceRef.current = new Lenis()
+  //     if (!lenisInstanceRef.current) {
+  //       lenisInstanceRef.current = new Lenis()
 
-        document.querySelector('.logo')?.addEventListener('click',handleLogoClick)
-        document.querySelector('.Menulogo')?.addEventListener('click',handleMenuLogoClick)
+  //       document.querySelector('.logo')?.addEventListener('click',handleLogoClick)
+  //       document.querySelector('.Menulogo')?.addEventListener('click',handleMenuLogoClick)
 
   
-        function raf(time) {
-          lenisInstanceRef.current.raf(time)
-          rafRef.current = requestAnimationFrame(raf)
-        }
+  //       function raf(time) {
+  //         lenisInstanceRef.current.raf(time)
+  //         rafRef.current = requestAnimationFrame(raf)
+  //       }
 
-        raf()
-      }
+  //       raf()
+  //     }
 
-      if (navMenuOpen && lenisInstanceRef.current) {
-        cancelAnimationFrame(rafRef.current)
-        lenisInstanceRef.current.destroy()
-        lenisInstanceRef.current = null
-      }
+  //     if (navMenuOpen && lenisInstanceRef.current) {
+  //       cancelAnimationFrame(rafRef.current)
+  //       lenisInstanceRef.current.destroy()
+  //       lenisInstanceRef.current = null
+  //     }
 
-      if (project && lenisInstanceRef.current) {
-        cancelAnimationFrame(rafRef.current)
-        lenisInstanceRef.current.destroy()
-        lenisInstanceRef.current = null
-      }
-    }
+  //     if (project && lenisInstanceRef.current) {
+  //       cancelAnimationFrame(rafRef.current)
+  //       lenisInstanceRef.current.destroy()
+  //       lenisInstanceRef.current = null
+  //     }
+  //   }
 
 
 
-    return () => {
-      if (lenisInstanceRef.current) {
-        document.querySelector('.logo')?.removeEventListener('click', handleLogoClick);
-        document.querySelector('.Menulogo')?.removeEventListener('click',handleMenuLogoClick)
+  //   return () => {
+  //     if (lenisInstanceRef.current) {
+  //       document.querySelector('.logo')?.removeEventListener('click', handleLogoClick);
+  //       document.querySelector('.Menulogo')?.removeEventListener('click',handleMenuLogoClick)
 
-        cancelAnimationFrame(rafRef.current);
-        lenisInstanceRef.current.destroy();
-        lenisInstanceRef.current = null;
-      }
-    }
+  //       cancelAnimationFrame(rafRef.current);
+  //       lenisInstanceRef.current.destroy();
+  //       lenisInstanceRef.current = null;
+  //     }
+  //   }
 
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [navMenuOpen,startScroll,pathname,project]);
+  // // eslint-disable-next-line react-hooks/exhaustive-deps
+  // }, [navMenuOpen,startScroll,pathname,project]);
 
 
 
