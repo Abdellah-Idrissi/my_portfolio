@@ -39,7 +39,14 @@ export default function Preloader() {
     //   });
     // }, 100);
     window.addEventListener('load',()=> {
-      console.log('yoo')
+      console.log('first')
+    setTimeout(() => {
+      console.log('second')
+      document.documentElement.scrollTo({
+        top: 0,
+        behavior: 'instant'
+      });
+    }, 100);
     })
   }, []);
 
