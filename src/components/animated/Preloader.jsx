@@ -34,7 +34,6 @@ export default function Preloader() {
   useEffect(() => {
     // force the scroll to top 0 , even in refresh , duplicate
     const scrollToTop = ()=> {
-      console.log('alo')
       document.documentElement.scrollTo({
         top: 0,
         behavior: 'instant'
@@ -48,7 +47,7 @@ export default function Preloader() {
 
     window.addEventListener('beforeunload',scrollToTop)
 
-    window.addEventListener('unload',scrollToTop)
+    window.addEventListener('',scrollToTop)
 
     return ()=> {
       window.removeEventListener('beforeunload',scrollToTop)
