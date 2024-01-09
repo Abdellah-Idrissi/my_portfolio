@@ -5,9 +5,9 @@ import gif from '../../public/404.gif'
 
 export default function NotFound() {
   return (
-    <div className='h-[100dvh] relative text-white bg-main ftr'>
+    <div className='dynamicHeight relative text-white bg-main ftr'>
       <div className='relative'>
-        <Image src={gif} alt="404 gif" priority className='h-[100dvh] w-screen object-cover object-top'></Image>
+        <Image src={gif} alt="404 gif" priority className='dynamicHeight w-screen object-cover object-top'></Image>
         <div className='absolute inset-0 w-full h-full bg-black/80'></div>
       </div>
 

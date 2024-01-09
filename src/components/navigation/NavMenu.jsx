@@ -71,7 +71,7 @@ export default function NavMenu() {
       initial={"initial"}
       animate={"animate"}
       exit={"exit"}
-      className={`${pathname === '/' ? 'navmenu_gradient z-[2000]' : 'navmenu_gradient2 z-[100]'} grid place-items-center p-5 md:p-6 lg:p-8 xl:p-10  fixed top-0 left-0 h-[100dvh] max-h-[100dvh] inset-x-0 origin-top`}
+      className={`${pathname === '/' ? 'navmenu_gradient z-[2000]' : 'navmenu_gradient2 z-[100]'} grid place-items-center p-5 md:p-6 lg:p-8 xl:p-10  fixed top-0 left-0 dynamicHeight dynamicMaxMenuHeight inset-x-0 origin-top`}
     >
       <div
         className={`fixed  inset-x-0 p-5 md:p-6 lg:p-8 xl:p-10 z-50 transition-all duration-300 top-0 `}

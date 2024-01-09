@@ -16,7 +16,7 @@ export default function Hero() {
 
   return (
     <div
-      className="bg-heroBg bg-no-repeat bg-cover bg-center h-[100dvh] p-5 md:p-6 lg:p-8 xl:p-10 relative"
+      className="bg-heroBg bg-no-repeat bg-cover bg-center dynamicHeight p-5 md:p-6 lg:p-8 xl:p-10 relative"
       id="home"
     >
 

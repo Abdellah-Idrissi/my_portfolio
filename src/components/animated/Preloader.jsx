@@ -69,10 +69,10 @@ export default function Preloader() {
         dispatch(endPreloader())
       }}
 
-      className="h-[100dvh] w-full  text-white fixed inset-0 z-[100] font-clash loader">
+      className="dynamicHeight w-full  text-white fixed inset-0 z-[100] font-clash loader">
 
       <motion.div
-        className="h-[50dvh] bg-main loader"
+        className="dynamicLoaderHeight bg-main loader"
         variants={{
           visible:{y:0},
           hidden:{y:'-150%'}
@@ -83,7 +83,7 @@ export default function Preloader() {
       />
 
       <motion.div 
-        className="h-[50dvh] bg-main loader"
+        className="dynamicLoaderHeight bg-main loader"
         variants={{
           visible:{y:0},
           hidden:{y:'150%'}

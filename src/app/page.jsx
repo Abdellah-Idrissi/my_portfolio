@@ -10,7 +10,7 @@ import Skills from "@/components/sections/Skills";
 export default function Home() {
   
   return (
-    <main className='relative overflow-x-hidden'>
+    <main className='relative overflow-x-hidden '>
 
       <HeaderWrapper />
 
