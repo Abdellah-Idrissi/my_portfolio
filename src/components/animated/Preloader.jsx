@@ -33,12 +33,18 @@ export default function Preloader() {
 
   useEffect(() => {
     // force the scroll to top 0 , even in refresh , duplicate
-    setTimeout(() => {
+    const scrollToTop = ()=> {
       document.documentElement.scrollTo({
         top: 0,
         behavior: 'instant'
       });
-    }, 4500);
+    }
+
+    scrollToTop()
+
+    window.addEventListener('beforeunload',scrollToTop)
+
+    window.addEventListener('unload',scrollToTop)
 
   }, []);
 
@@ -62,8 +68,6 @@ export default function Preloader() {
       onAnimationComplete={()=> {
         dispatch(endPreloader())
       }}
-
-
 
       className="h-[100dvh] w-full  text-white fixed inset-0 z-[100] font-clash loader">
 
