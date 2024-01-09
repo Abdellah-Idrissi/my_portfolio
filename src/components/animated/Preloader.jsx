@@ -77,7 +77,7 @@ export default function Preloader() {
         dispatch(endPreloader())
       }}
 
-      className="dynamicHeight w-full  text-white fixed inset-0 z-[100] font-clash loader">
+      className="dynamicHeight2 w-full  text-white fixed inset-0 z-[100] font-clash loader">
 
       <motion.div
         className="dynamicLoaderHeight bg-main loader"

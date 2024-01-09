@@ -143,12 +143,18 @@ html.lenis {
   height: 100svh;
 }
 
+
+.dynamicHeight2 {
+  height: 100vh;
+  height: 100dvh;
+}
+
 .dynamicLoaderHeight {
   height: 50vh;
-  height: 50svh;
+  height: 50dvh;
 }
 
 .dynamicMaxMenuHeight {
   max-height:100vh;
-  max-height:100svh;
+  max-height:100dvh;
 }
