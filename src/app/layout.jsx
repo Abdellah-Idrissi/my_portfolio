@@ -91,7 +91,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${clashDisplay.variable} ${generalSans.variable} `}>
-      <body className={`${generalSans.className} text-main relative h-screen overflow-y-hidden  `} suppressHydrationWarning >
+      <body className={`${generalSans.className} text-main relative overflow-x-hidden h-screen overflow-y-hidden  `} suppressHydrationWarning >
         <RtkProvider>
           
           <Image src={img} alt="" loading="eager" priority className="hidden "></Image>
