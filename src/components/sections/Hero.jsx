@@ -7,6 +7,8 @@ import { motion, useInView } from "framer-motion";
 import { useDispatch, useSelector } from "react-redux";
 import { startScroll } from "@/rtk/scrollSlice";
 import { useRef } from "react";
+import img from '../../../public/mainbg.webp'
+import { ImageIcon } from "@radix-ui/react-icons";
 
 export default function Hero() {
   const isLoading = useSelector(state=> state.preloader)
@@ -28,9 +30,11 @@ export default function Hero() {
 
   return (
     <div
-      className="bg-heroBg bg-no-repeat bg-cover bg-center dynamicHeight p-5 md:p-6 lg:p-8 xl:p-10 relative"
+      className=" dynamicHeight p-5 md:p-6 lg:p-8 xl:p-10 relative"
       id="home"
     >
+
+      <Image src={img} quality={100} priority placeholder="blur" alt="hero background" className="absolute left-0 top-0 h-full w-full object-center object-cover"></Image>
 
       <Sound />
 
@@ -78,6 +82,7 @@ export default function Hero() {
           </motion.div>
         </div>
       </motion.div>
+      
     </div>
   );
 }
