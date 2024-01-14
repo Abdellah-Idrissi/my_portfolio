@@ -129,6 +129,7 @@ export default function ModernWorld() {
                     <Image
                       src={img1}
                       alt="project pic"
+                      placeholder="blur"
                       priority
                       className="bg-[#e0e0e0e8] btn hover:scale-110 md:hover:scale-[1.15] transition-transform duration-200 w-full h-[335px] ssm:h-[350px] xsm:h-[410px] m6:h-[500px] md:h-[550px] mmd:h-[600px] lg:h-auto object-cover "
                     />
@@ -140,6 +141,7 @@ export default function ModernWorld() {
                     <Image
                       src={img2}
                       alt="project pic"
+                      placeholder="blur"
                       priority
                       className="bg-[#e0e0e0e8] btn hover:scale-110 md:hover:scale-[1.15] transition-transform duration-200 w-full h-[335px] ssm:h-[350px] xsm:h-[410px] m6:h-[500px] md:h-[550px] mmd:h-[600px] lg:h-auto object-cover "
                     />

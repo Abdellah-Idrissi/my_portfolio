@@ -133,6 +133,7 @@ export default function FreelancerDash() {
                   <div className="overflow-hidden">
                     <Image
                       src={img1}
+                      placeholder="blur"
                       alt="project pic"
                       priority
                       className="bg-[#e0e0e0e8] btn hover:scale-110 md:hover:scale-[1.15] transition-transform duration-200 w-full h-[335px] ssm:h-[350px] xsm:h-[410px] m6:h-[500px] md:h-[550px] mmd:h-[600px] lg:h-auto object-cover "
@@ -144,6 +145,7 @@ export default function FreelancerDash() {
                   <div className="overflow-hidden">
                     <Image
                       src={img2}
+                      placeholder="blur"
                       alt="project pic"
                       priority
                       className="bg-[#e0e0e0e8] btn hover:scale-110 md:hover:scale-[1.15] transition-transform duration-200 w-full h-[335px] ssm:h-[350px] xsm:h-[410px] m6:h-[500px] md:h-[550px] mmd:h-[600px] lg:h-auto object-cover "
