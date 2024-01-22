@@ -31,14 +31,20 @@ html.lenis {
   }
 }
 
+/*------- HIDE SCROLLBAR -------*/
+::-webkit-scrollbar {
+  display: none; 
+}
+
+* {
+  scrollbar-width: none; 
+}
+
 /*------- GENERAL -------*/
 .headerScrolling {
   @apply bg-white shadow-sm
 }
 
-::-webkit-scrollbar {
-  display: none;
-}
 
 .navmenu_gradient {
   background: linear-gradient(180deg, #FFF 0%, #E4EBF3 60%);
