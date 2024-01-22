@@ -82,7 +82,7 @@ const generalSans = localFont({
 
 export const metadata = {
   title: "Abdellah Moumen El Idrissi - Frontend Developer",
-  description: "Hi I'm Abdellah welcome to my portfolio! I'm a frontend developer with a particular focus on the Next.js/React stack",
+  description: "Abdellah Moumen El Idrissi, a frontend developer with a particular focus on the Next.js/React stack",
   icons: [{ rel: 'icon', url: favicon.src }],
 }
 
