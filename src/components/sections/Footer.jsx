@@ -1,6 +1,7 @@
 "use client"
 
-import { FaDiscord, FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { SiBento } from "react-icons/si";
 import MagneticEffect from "../animated/MagneticEffect";
 import Reveal from "../animated/Reveal";
 
@@ -74,7 +75,7 @@ export default function Footer() {
             <Reveal removeOverflow={true}>
               <div className="flex items-center gap-x-[16px] xsm:gap-x-5 m7:gap-x-6 m8:gap-x-7 xl:gap-x-[30px]">
                 <MagneticEffect>
-                  <a href="https://www.linkedin.com/in/abdellah-moumen-el-idrissi-8187ba2a1/" target="_blank">
+                  <a href="https://www.linkedin.com/in/abdellah-moumen-el-idrissi/" target="_blank">
                     <FaLinkedin className="c2 w-[13px] h-[13px] m7:w-[13.5px] m7:h-[13.5px] m8:w-[16px] m8:h-[16px] cursor-pointer transition-colors duration-200 hover:text-[#0077b5] "/>
                   </a>
 
@@ -87,8 +88,8 @@ export default function Footer() {
                 </MagneticEffect>
 
                 <MagneticEffect>
-                  <a href="https://discord.com/users/728274568204255273" target="_blank">
-                    <FaDiscord className="c2 w-[15px] h-[15px] m7:w-[15px] m7:h-[15px]  m8:w-[18px] m8:h-[18px] cursor-pointer transition-colors duration-200 hover:text-[#7289da]"/>
+                  <a href="https://bento.me/abdellahmoumenelidrissi" target="_blank">
+                    <SiBento className="c2 w-[14px] h-[14px] m7:w-[14.5px] m7:h-[14.5px]  m8:w-[17.5px] m8:h-[17.5px] cursor-pointer transition-colors duration-200 hover:text-[#7289da]"/>
                   </a>
                 </MagneticEffect>
 
