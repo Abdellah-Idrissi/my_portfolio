@@ -43,7 +43,7 @@ export default function Footer() {
 
 
           <Reveal>
-              <a href="https://www.linkedin.com/in/abdellah-moumen-el-idrissi-8187ba2a1/" target="_blank" className="relative inline-block btn cursor-pointer px-5 pl-4 w-[237px] m9:w-[250px] h-[35px] m8:h-[40px] m9:h-[50px] bg-white text-main rounded-full border border-white group">
+              <a href="https://www.linkedin.com/in/abdellah-moumen-el-idrissi/" target="_blank" className="relative inline-block btn cursor-pointer px-5 pl-4 w-[237px] m9:w-[250px] h-[35px] m8:h-[40px] m9:h-[50px] bg-white text-main rounded-full border border-white group">
 
                 <div className="w-5 h-5 m9:w-[25px] m9:h-[25px] bg-main rounded-full absolute left-[16px] top-[7.5px] m8:top-[10px] m9:top-[12.5px] group-hover:w-full group-hover:h-full group-hover:left-0 group-hover:top-0 transition-all duration-300 ease-in-out" />
 
@@ -78,7 +78,6 @@ export default function Footer() {
                   <a href="https://www.linkedin.com/in/abdellah-moumen-el-idrissi/" target="_blank">
                     <FaLinkedin className="c2 w-[13px] h-[13px] m7:w-[13.5px] m7:h-[13.5px] m8:w-[16px] m8:h-[16px] cursor-pointer transition-colors duration-200 hover:text-[#0077b5] "/>
                   </a>
-
                 </MagneticEffect>
 
                 <MagneticEffect>
@@ -92,7 +91,6 @@ export default function Footer() {
                     <SiBento className="c2 w-[14px] h-[14px] m7:w-[14.5px] m7:h-[14.5px]  m8:w-[17.5px] m8:h-[17.5px] cursor-pointer transition-colors duration-200 hover:text-[#7289da]"/>
                   </a>
                 </MagneticEffect>
-
 
               </div>
             </Reveal>
